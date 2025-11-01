@@ -1,12 +1,5 @@
 # 🤖 Automated AI Interviewer
 
-```
-⚡ ◉ ◉ ⚡
-┌─🤖─┐
-├─⚙️─⚙️─┤
-└─────┘
-```
-
 A modern, responsive web application that conducts automated AI-powered job interviews using voice interaction and real-time video feedback.
 
 ## ✨ Features
