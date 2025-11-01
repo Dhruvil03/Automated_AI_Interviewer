@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="theme-color" content="#0b1020" />
+  <meta http-equiv="origin-trial"
+    content="A3lOvHKckMnJVxRrbpd/TWaM/3d0NMNlIOzAaiRtPo2x2JktUvnRhNNafqsB6tKYn3RBM6C27anD5GDR18R47QIAAABxeyJvcmlnaW4iOiJodHRwOi8vMTI3LjAuMC4xOjMwMDAiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=">
+  <title>Automated AI Interviewer</title>
+  <script>if (!isSecureContext) location.protocol = "https:";</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" type="module" defer></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="robot-title">
+        <div class="robot-art">
+          <div class="robot-head">⚡ ◉ ◉ ⚡</div>
+          <div class="robot-body">┌─🤖─┐</div>
+          <div class="robot-arms">├─⚙️─⚙️─┤</div>
+          <div class="robot-base">└─────┘</div>
+        </div>
+        <h1>Automated AI Interviewer</h1>
+      </div>
+    </header>
+
+    <div id="error" role="alert"></div>
+
+    <div class="interview-layout">
+      <!-- Left: camera -->
+      <aside class="camera-container">
+        <video id="camera" autoplay playsinline muted aria-label="Camera feed"></video>
+      </aside>
+
+      <!-- Right: chat -->
+      <section class="chat-section">
+        <div id="chat" class="chat" aria-live="polite" aria-label="Interview conversation"></div>
+        <div id="transcript" aria-live="polite" aria-label="Speech transcript"></div>
+
+        <div class="controls">
+          <button id="start-btn" class="btn" aria-label="Start voice recording">
+            🎤 Start listening
+          </button>
+          <button id="stop-btn" class="btn secondary" disabled aria-label="Stop voice recording">
+            ⏹️ Stop listening
+          </button>
+          <button id="reset-btn" class="btn secondary" aria-label="Reset interview">
+            🔄 Reset
+          </button>
+          <button id="finish-btn" class="btn" aria-label="Finish interview and get feedback">
+            ✅ Finish interview
+          </button>
+        </div>
+
+        <details>
+          <summary>Debug: Raw response</summary>
+          <div id="raw" aria-label="Raw AI response"></div>
+        </details>
+      </section>
+    </div>
+
+
+  </div>
+</body>
+
+</html>
